@@ -350,7 +350,8 @@ This project uses the following tooling enforced via pre-commit:
 - **codespell** — spell checking
 
 ---
-
+IMP NOTE - as if now reddit has updated their API policies and will require a developer account to scrape data of reddit
+---
 ## License
 
 This project is licensed under the **MIT License**.
