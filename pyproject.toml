@@ -1,0 +1,27 @@
+[project]
+name = "rss-reddit"
+version = "0.1.0"
+description = "Reddit Scraper (RSS) - A powerful and flexible Reddit data extraction tool."
+authors = [
+    { name = "Avishkar Jadkar", email = "avishkar.jadkar@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pygments>=2.18.0",
+    "requests>=2.32.3",
+    "urllib3>=2.0.0",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "pydantic>=2.9.0",
+    "tzdata>=2025.3",
+    "pandas>=2.2.0",
+    "openpyxl>=3.1.0",
+    "easyocr>=1.7.0",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/avishkarjadkar/reddit_scraper"
+Repository = "https://github.com/avishkarjadkar/reddit_scraper.git"
+
