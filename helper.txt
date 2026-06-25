@@ -1,0 +1,3 @@
+post type choices=["relevance", "hot", "top", "new", "comments"]
+post time choices=["hour", "day", "week", "month", "year", "all"]
+post time slot format HH:MM-HH:MM (IST)
