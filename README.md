@@ -1,4 +1,4 @@
-# Reddit Scraper (RSS)
+# Reddit Scraper
 
 > A powerful, modular Python tool for harvesting Reddit posts, comments, and media — via CLI, REST API, or programmatically.
 
@@ -25,7 +25,7 @@
 
 ## Overview
 
-**Reddit Scraper (RSS)** is a production-ready Python application for extracting data from Reddit's public JSON API. It handles:
+**Reddit Scraper ** is a production-ready Python application for extracting data from Reddit's public JSON API. It handles:
 
 - Full-text search across all of Reddit or within specific subreddits
 - Deep post scraping: title, body, score, media URLs, and full nested comment trees
@@ -74,8 +74,8 @@ RSS/
 │           ├── image.jpg       # Downloaded image (if available)
 │           └── thumbnail.jpg   # Fallback thumbnail (if no full image)
 └── src/
-    └── rss/
-        ├── scraper.py      # Core RSS scraper engine (RSS class)
+    └── rs/
+        ├── scraper.py      # Core RS scraper engine (RS class)
         ├── api.py          # FastAPI application and route definitions
         ├── sessions.py     # RandomUserAgentSession (UA rotation)
         ├── agents.py       # Pool of 7,000+ real browser User-Agents
@@ -90,21 +90,21 @@ RSS/
 ```
 User
  ├── CLI (topic_harvester.py)
- │    └──> RSS Engine (src/rss/scraper.py)
- │              └──> RandomUserAgentSession (src/rss/sessions.py)
+ │    └──> RS Engine (src/rs/scraper.py)
+ │              └──> RandomUserAgentSession (src/rs/sessions.py)
  │                        └──> agents.py (UA pool)
  │              └──> Reddit JSON API (reddit.com/*.json)
- │    └──> Utils (src/rss/utils.py)
+ │    └──> Utils (src/rs/utils.py)
  │              ├── download_image()
  │              ├── export_to_excel()
  │              └── setup_logging()
- │    └──> OCR (src/rss/ocr.py)
+ │    └──> OCR (src/rs/ocr.py)
  │
- └── REST API (api_runner.py → src/rss/api.py)
-      └──> Same RSS Engine
+ └── REST API (api_runner.py → src/rs/api.py)
+      └──> Same RS Engine
 ```
 
-The `RSS` class (`src/rss/scraper.py`) is the central engine. Both the CLI and the REST API share the same scraper instance, ensuring consistent behavior across interfaces.
+The `RS` class (`src/rs/scraper.py`) is the central engine. Both the CLI and the REST API share the same scraper instance, ensuring consistent behavior across interfaces.
 
 ---
 
